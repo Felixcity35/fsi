@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context=".AccVerification">
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are Transfering  #10,000 to !"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/receiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receivers name"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtview"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/receiverAccno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receivers Acc"
+        android:textSize="18sp"
+        android:layout_below="@+id/receiverName"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/securityquest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="security question section"
+        android:textSize="18sp"
+        android:layout_below="@+id/receiverAccno"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Remaining : 00:30sec"
+        android:textSize="18sp"
+        android:layout_below="@+id/securityquest"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/secuquest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your Mom Maiden's Name ?"
+        android:textSize="18sp"
+        android:layout_below="@+id/timer"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/securityans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="security answer"
+        android:textColorHint="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/secuquest"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/securityans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TransferActivity"
+    tools:showIn="@layout/activity_transfer">
+
+
+    <EditText
+        android:id="@+id/accno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account No"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="50dp"
+       android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/accno"
+        />
+
+    <EditText
+        android:id="@+id/descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrip"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/amount"
+        />
+
+
+    <Button
+        android:id="@+id/proceedbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/descrip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary"
+        />
+</RelativeLayout>

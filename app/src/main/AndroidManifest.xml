@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teamjcf.sterling">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Verification.PassVerificationActivity"></activity>
+        <activity android:name=".AccVerification" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".TransferActivity"
+            android:label="@string/title_activity_transfer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Verification.PasswordVerifiActivity"
+            android:label="@string/title_activity_password_verifi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Verification.VerificationActivity"
+            android:label="@string/title_activity_verification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registration.BvnActivity"
+            android:label="@string/title_activity_bvn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Registration.CardNumberActivity" />
+        <activity
+            android:name=".Registration.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
